@@ -2,6 +2,18 @@
 The engine of the pack porter
 <br>
 Will be updated a lot to work with the porter site Polr and I are creating.
+# How to use
+This is a CLI application
+<br>
+Accepts Port Commands for mediafire, pvprp, and file paths. 
+<br>
+Example:
+<br>
+java - jar PorterEngine-all.jar port "mediafire.com/pack.zip"
+<br>
+java - jar PorterEngine-all.jar port "C:\file.zip"
+<br>
+The program returns a hashcode of the string to the file path returned after porting is complete
 # To do
 Sky commands (very easy)
 <br>
