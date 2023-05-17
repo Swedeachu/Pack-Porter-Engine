@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('commons-io:commons-io:2.11.0')
+    implementation('net.sf.sevenzipjbinding:sevenzipjbinding:16.02-2.01')
+    implementation('net.sf.sevenzipjbinding:sevenzipjbinding-all-platforms:16.02-2.01')
+    implementation('org.apache.commons:commons-compress:1.21')
+    implementation('com.twelvemonkeys.imageio:imageio-tga:3.9.3')
+    implementation('org.jsoup:jsoup:1.15.4')
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+}
+
+task fatJar(type: Jar) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes 'Main-Class': 'swim.porter.Main'
+    }
+    baseName = project.name + '-all'
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
