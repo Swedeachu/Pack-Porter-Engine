@@ -14,6 +14,8 @@ java - jar PorterEngine-all.jar port "mediafire.com/pack.zip"
 java - jar PorterEngine-all.jar port "C:\file.zip"
 <br>
 The program returns a hashcode of the string to the file path returned after porting is complete
+# Requires Java
+[Download it here](https://download.oracle.com/java/17/archive/jdk-17.0.5_windows-x64_bin.exe)
 # To do
 Sky commands (very easy)
 <br>
