@@ -33,7 +33,7 @@ fixing hotbar slot selector transparency if possible
 <br>
 add this porter engine to a sleak and fancy 3.0 desktop application that will have all these features
 # Credits
-Lead Engine Programmer: Swimfan72
+Lead Engine Programmer: Swedeachu
 <br>
 Assets and Web Site Developer: PolrFlare
 <br>
